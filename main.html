@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Buttons</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="mainscript.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="img/maths.png" onclick="location.href='main.html'" alt="شعار" />
+    </div>
+
+    <div class="button-container">
+        <div><button onclick="showPopup()" style="background-color: #ff3f20;">ابدأ</button></div>
+        <div><button style="background-color: #89B4E7;" onclick="location.href='results.html'" >النتائج</button></div>
+        <div><button style="background-color: #fec40b;" onclick="location.href='settings.html'">الخيارات</button></div>
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container" id = "form-container">
+            <h3 id = "score">اكتب اسمك:</h3>
+            <h5 id="inputNameMessage" style="color: red;"></h5>
+            <input id="inputName" placeholder="الاسم">
+            <button id="startButton" type="button" onclick="newUser()">ابدأ</button>
+            <button id="hideButton" type="button" onclick="hidePopup()">إغلاق</button>
+        </form>
+    </div>
+</body>
+
+</html>
